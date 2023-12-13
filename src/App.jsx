@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Flex, Image, Input, Text } from "@chakra-ui/react";
+import { Button, Card, Flex, Image, Input, Text } from "@chakra-ui/react";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -90,7 +90,8 @@ function App() {
   };
 
   return (
-    <Flex h="786px" bg="#f8f8f8" alignItems="center" flexDirection="column">
+    <Flex h="100vh" bg="#f8f8f8" alignItems="center" flexDirection="column">
+      <Card paddingBottom="20px" top="100px" alignItems="center" w="70%" h="auto">
       <Text as="b" fontSize="100px">Todo List</Text>
       <Flex w="49%">
         <Input
@@ -156,6 +157,7 @@ function App() {
           </Flex>
         </Flex>
       )}
+      </Card>
     </Flex>
   );
 }
